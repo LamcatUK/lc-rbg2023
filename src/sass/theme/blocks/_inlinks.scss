@@ -1,0 +1,23 @@
+.inlinks {
+    &.sticky {
+            position: sticky;
+            top: var(--h-top);
+            @media (min-width: 992px) {
+                top: var(--h-top-desktop);
+            }
+            background-color: #fff;
+            z-index: 9999;
+    }
+    &__select {
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+    &__select_title {
+        font-size: var(--fs-200);
+        font-weight: var(--fw-600);
+        letter-spacing: calc(1rem / 18);
+        text-transform: uppercase;
+    }
+}

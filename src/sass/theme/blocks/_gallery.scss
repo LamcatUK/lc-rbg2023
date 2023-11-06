@@ -1,0 +1,36 @@
+.gallery_block {
+    .grid-sizer,
+    .img {
+        width: calc(20% - 1rem);
+        margin: 0.25rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-group {
+        .btn-filter {
+            min-width: unset;
+            background-color: white;
+            border: 2px solid var(--col-green-400);
+            color: var(--col-green-400);
+            font-size: var(--fs-300);
+            font-weight: var(--fw-600);
+            letter-spacing: calc(1rem / 18);
+            transition: all var(--transition);
+            box-shadow: var(--shadow-in);
+            &:hover {
+                box-shadow: none;
+                transform: translateY(1px);
+                background-color: var(--col-green-400);
+                color: white;
+            }
+        }
+        .active {
+            color: var(--col-gold-400);
+            background-color: var(--col-green-400);
+            box-shadow: none;
+            transform: translateY(1px);
+            font-weight: var(--fw-900);
+        }
+    }
+}

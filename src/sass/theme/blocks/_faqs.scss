@@ -1,0 +1,29 @@
+.faq {
+    &__entry {
+        border-bottom: 1px solid hsl(var(--hsl-grey-400) / 0.2);
+    }
+    &__header {
+        font-weight: var(--fw-600);
+        font-size: var(--fs-500);
+        position: relative;
+        padding-block: 1rem;
+        &::after {
+            content: "\f105";
+            font-family: "font awesome 6 free";
+            font-weight: 600;
+            position: absolute;
+            right: 0;
+            transition: transform var(--transition);
+        }
+        &[aria-expanded="true"]::after {
+            transform: rotate(90deg);
+        }
+    }
+    &__body {
+        border-top: 1px solid hsl(var(--hsl-grey-400) / 0.2);
+        padding-block: 1rem;
+    }
+    &__text {
+        max-width: 70ch;
+    }
+}

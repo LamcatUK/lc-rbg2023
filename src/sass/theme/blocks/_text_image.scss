@@ -1,0 +1,9 @@
+.text_image {
+    img {
+        border-radius: var(--border-lg);
+        box-shadow: var(--shadow-out);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

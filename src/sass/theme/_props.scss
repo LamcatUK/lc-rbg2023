@@ -1,0 +1,72 @@
+$col-primary: hsl(181, 100%, 14%);
+$col-secondary: hsl(51, 100%, 50%);
+$col-grey: #FFF0F0;
+
+:root {
+
+    --hsl-green-200: 146 35% 58%;
+    --hsl-green-400: 181 100% 14%;
+    // --hsl-green-600: 135 45% 21%;
+    // --hsl-green-900: 147 94% 6%;
+
+    --col-green-200: hsl( var(--hsl-green-200) );
+    --col-green-400: hsl( var(--hsl-green-400) );
+    // --col-green-600: hsl( var(--hsl-green-600) );
+    // --col-green-900: hsl( var(--hsl-green-900) );
+    
+    --col-tint-1: #a9d5bc;
+    --col-tint-2: #c5e3d2;
+    --col-tint-3: #e2f1e9;
+
+    --hsl-gold-200: 51 100% 80%;
+    --hsl-gold-400: 51 100% 50%;
+    // --hsl-gold-600: 47 100% 50%;
+
+    --col-gold-200: hsl( var(--hsl-gold-200));
+    --col-gold-400: hsl( var(--hsl-gold-400));
+    // --col-gold-600: hsl( var(--hsl-gold-600));
+
+    --hsl-grey-400: 0 0% 25%;
+
+    --col-grey-400: hsl( var(--hsl-grey-400)); // #404040;
+    --col-grey-800: rgb(51,51,51); // #333333;
+
+    --col-primary: var(--col-green-400);
+    --col-secondary: var(--col-gold-400);
+    --col-grey: #FFF0F0;
+
+    --h-top: 89px;
+    --h-top-desktop: 111px;
+
+    --border-lg: 0.5rem;
+
+    --fs-200: 0.813rem;
+    --fs-300: 0.9rem;
+    --fs-400: 1rem;
+    --fs-500: 1.2rem;
+    --fs-600: 1.4rem;
+    --fs-700: 1.8rem;
+    --fs-800: 2.2rem;
+    --fs-900: calc(52px + (72 - 52) * ((100vw - 300px) / (1200 - 300)));
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-900: 800;
+
+    --ff-body: 'Figtree', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    // --shadow-out: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    --shadow-out-f: drop-shadow( 0px 10px 15px rgba(0, 0, 0, 0.2)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+
+--shadow-out: rgba(0, 0, 0, 0.15) 0px 14px 28px, rgba(0, 0, 0, 0.12) 0px 10px 10px;
+--shadow-in: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+// --shadow-out: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; // #38
+// --shadow-in: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; // #36
+
+// --shadow-out: rgba(149, 157, 165, 0.2) 0px 8px 24px; // #0
+// --shadow-in: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; // #4
+
+
+    --transition: 100ms ease-in;
+}

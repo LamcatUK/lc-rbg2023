@@ -1,0 +1,121 @@
+#wrapper-navbar {
+    background-color: var(--col-green-400);
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    @media all and (min-width:992px) {
+        font-size: 0.9rem;
+    }
+
+    a::after {
+        content: '' !important;
+    }
+
+    border-bottom: 5px solid var(--col-gold-400);
+}
+
+
+.navbar-brand {
+    background-image: url(../img/rbg_nostrap-wo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    width: 80px;
+    height: 60px;
+
+    @media (min-width: 992px) {
+        width: 120px;
+        height: 90px;
+    }
+    margin-right: 0;
+}
+
+
+#topNav {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    a {
+        transition: all 0.2s ease;
+        color: var(--col-gold-400);
+        &:hover:not(.btn-topnav) {
+            color: var(--col-gold-200);
+            text-decoration: none;
+        }
+    }
+    .social-icons {
+        font-size: 1.5rem;
+        a:not(:last-of-type) {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .fa-brands {
+        font-size: 1.2rem;
+    }
+
+}
+
+#main-nav {
+
+    padding: 0;
+    line-height: 1;
+    // text-transform: uppercase;
+}
+
+#primaryNav {
+    .menu-item {
+        text-align: left;
+        a {
+            padding: 0.5rem;
+        }
+        @media all and (min-width:992px) {
+            text-align: center;
+            a {
+                padding: 0.3rem 0.5rem;
+            }
+        }
+    }
+
+    // @media all and (min-width:1200px) {
+    //     .menu-item {
+    //         a {
+    //     font-size: 1.125rem;            
+    //         }
+    //     }        
+    // }
+
+
+    a {
+        color: var(--col-gold-400);
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        &:hover {
+            color: var(--col-gold-200);
+        }
+    }
+    .current-menu-ancestor>a,
+    .active>a {
+        // font-weight: 600;
+        color: var(--col-gold-200);
+    }
+    @media screen and (min-width:576px) {
+        .contact-icons {
+            font-size: 1.4rem;
+        }
+    }
+
+}
+
+.navbar-toggler {
+    color: var(--col-gold-600);
+}
+
+#top-nav .nav-item a {
+    display: inline-block;
+    margin-right: 0.5rem;
+    .fab {
+        font-size: 1.2rem;
+    }
+}

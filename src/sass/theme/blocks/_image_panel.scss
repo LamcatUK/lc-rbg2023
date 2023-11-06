@@ -1,0 +1,8 @@
+.image_panel {
+    width: 100vw;
+    img {
+        aspect-ratio: 9 / 5;
+        object-fit: cover;
+        object-position: center;
+    }
+}

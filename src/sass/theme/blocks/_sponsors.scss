@@ -1,0 +1,46 @@
+.sponsors {
+    background: linear-gradient(45deg,#004445 0,#6fb98f 100%);
+    &__card {
+        display: block;
+        padding: 0 1.5rem 2rem 1.5rem;
+        img {
+            display: block;
+            margin-inline: auto;
+            max-height: 150px;
+            max-width: 100%;
+            border-radius: var(--border-lg);
+            transition: box-shadow var(--transition), transform var(--transition);
+            box-shadow: var(--shadow-out);
+        }
+        &:hover img {
+            box-shadow: var(--shadow-in);
+            transform: translateY(2px);
+        }
+    }
+}
+
+.sponsor-container {
+    &:not(:last-of-type) {
+        border-bottom: 1px solid var(--col-grey);
+    }
+    position: relative;
+    img {
+        display: block;
+        margin-inline: auto;
+        max-height: 150px;
+        max-width: 100%;
+        border-radius: var(--border-lg);
+    }
+
+    .link {
+        text-align: right;
+        font-weight: 600;
+        a::after {
+            content: "\f08e";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 600;
+            margin-left: 0.5rem;
+            display: inline-block;
+        }
+    }
+}

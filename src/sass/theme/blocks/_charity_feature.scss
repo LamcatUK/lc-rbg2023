@@ -1,0 +1,43 @@
+.charity_feature {
+    background-image: url(../img/stats_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(45deg,#004445cc 0,#6fb98fcc 100%);
+        z-index: -1;
+    }
+
+    .stats {
+        color: white;
+        &__title {
+            font-size: var(--fs-200);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        &__stat {
+            font-family: var(--font-headings);
+            font-weight: var(--fw-900);
+            font-size: 2.25rem;
+            text-shadow: var(--shadow-out);
+            @media (width >= 576px) {
+                font-size: 4rem;
+            }
+            .counter {
+                display: inline;
+            }
+        }
+    }
+
+    &__charity {
+        background-color: white;
+        border-radius: var(--border-lg);
+        box-shadow: var(--shadow-out);
+        padding: 1rem;
+    }
+}

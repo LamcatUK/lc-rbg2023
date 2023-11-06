@@ -1,0 +1,14 @@
+.ss_results {
+    img {
+        max-width: 290px;
+        display: block;
+        margin-inline: auto;
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width:992px) {
+        .btn {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.bg-image {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg--grey-100 {
+    background-color: var(--col-grey-400);
+}
+
+.bg--white {
+    background-color: #ffffff;
+}
+
+.bg--green-400 {
+    background-color: var(--col-green-400);
+}
+
+.text-grey-400 {
+    color: var(--col-grey-800) !important;
+}
+
+.text-gold-400 {
+    color: var(--col-gold-400) !important;
+}
+.text-green-400 {
+    color: var(--col-green-400) !important;
+}
+
+.bg--grad {
+    background: linear-gradient(45deg,#004445 0,#6fb98f 100%);
+    a {
+        color: var(--col-gold-400);
+    }
+}
+
+.overlay-bg {
+    background-image: url(../img/overlay-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    opacity: .1;
+}
+
+
+.bg-tint-1 { background: var(--col-tint-1); }
+.bg-tint-2 { background: var(--col-tint-2); }
+.bg-tint-3 { background: var(--col-tint-3); }

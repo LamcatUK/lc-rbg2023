@@ -1,0 +1,109 @@
+.page-bottom-highlight {
+    background: var(--col-gold-400);
+    padding: 0;
+    margin-bottom: -1px;
+    height: 5px;
+}
+
+footer {
+    z-index: -1;
+
+    /* place on the bottom */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 1px;
+    font-size: var(--fs-300);
+    background-color: var(--col-green-400);
+    color: #fff;
+    a {
+        font-weight: 300;
+        color: #fff;
+        transition: all 250ms ease-out;
+        &:hover {
+            text-decoration: none;
+            color: var(--col-gold-400);
+        }
+        &::after {
+            content: '' !important;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding-inline-start: 0;
+    }
+    .menu-title {
+        font-weight: var(--fw-600);
+        font-size: var(--fs-500);
+    }
+    .logo {
+        max-width: 140px;
+    }
+}
+
+.social-icons {
+    a {
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+}
+
+.colophon {
+    background-color: var(--col-green-400);
+    color: var(--col-gold-400);
+    font-size: 0.7rem;
+    a {
+        font-weight: 300;
+        color: var(--col-gold-400);
+        transition: all 250ms ease-out;
+        &:hover {
+            text-decoration: none;
+            color: var(--col-gold-200);
+        }
+    }
+    .logo {
+        width: 160px;
+        height: 40px;
+    }
+    a::after {
+        content: '' !important;
+    }
+}
+
+
+#to-top {
+    // display: inline-block;
+    background-color: var(--col-green-600);
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 12px;
+    right: 10px;
+    transition: opacity 300ms ease-out, background 300ms ease-out;
+    opacity: 0;
+    display: none;
+    z-index: 1000;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--col-gold-400);
+        svg {
+          fill: var(--col-green-600);
+        }
+    }
+    &.show {
+        opacity: 1;
+        display: inline-block;
+    }
+
+    svg {
+        width: 45px;
+        height: 65px;
+        fill: var(--col-gold-400);
+    }
+}
+

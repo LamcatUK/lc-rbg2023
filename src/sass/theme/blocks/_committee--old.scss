@@ -1,0 +1,70 @@
+.committee {
+    &__grid {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    &__card {
+        cursor: pointer;
+        overflow: hidden;
+
+        // width: min( calc(33% - 1rem) , 90vw );
+        // padding: 1rem;
+        
+        background-color: var(--col-green-200);
+        color: white;
+        border-radius: var(--border-lg);
+        display: grid;
+        box-shadow: var(--shadow-out);
+        transition: width var(--transition), background-color var(--transition), color var(--transition), transform var(--transition), box-shadow var(--transition);
+        
+        
+        width: 419px;
+        grid-template-columns: 419px 0;
+        
+        &:hover {
+            background-color: var(--col-grey);
+            color: black;
+            box-shadow: var(--shadow-in);
+            transform: translateY(2px);
+            
+            .committee__photo {
+                transform: translateY(-4px);
+                box-shadow: var(--shadow-out);
+            }
+        }
+
+    }
+
+    &__card_left, &__card_right {
+        padding: 1rem;
+    }
+
+    &__photo {
+        width: 240px;
+        border-radius: 100vw;
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin-inline: auto;
+        margin-bottom: 1rem;
+        box-shadow: var(--shadow-in);
+        transition: transform var(--transition), box-shadow var(--transition);
+    }
+    &__name {
+        margin-bottom: 0.25rem;
+        text-align: center;
+    }
+    &__role {
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: var(--fs-200);
+        margin-bottom: 0.5rem;
+    }
+    &__bio {
+        font-size: 16px;
+        display: none;
+    }
+}

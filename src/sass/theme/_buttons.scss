@@ -1,0 +1,183 @@
+.btn-topnav {
+    background-color: var(--col-green-400);
+    border: 2px solid var(--col-gold-400);
+    color: var(--col-gold-400);
+    text-transform: uppercase;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-900);
+    letter-spacing: 1px;
+    transition: background-color var(--transition);
+    &:hover,
+    &:focus-visible,
+    &:active {
+        background-color: var(--col-gold-400) !important;
+        color: var(--col-green-400) !important;
+    }
+}
+
+.btn-green {
+    background-color: var(--col-green-400);
+    color: var(--col-gold-400);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    letter-spacing: 1px;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-out);
+    &:hover {
+        box-shadow: var(--shadow-in);
+        transform: translateY(2px);
+        background-color: var(--col-green-400);
+        color: var(--col-gold-400) !important;
+    }
+}
+
+.btn-gold {
+    background-color: var(--col-gold-400);
+    border: 2px solid var(--col-gold-400);
+    color: var(--col-green-400) !important;
+    // text-transform: uppercase;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-900);
+    letter-spacing: 1px;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-out);
+    &:hover,
+    &:focus-visible,
+    &:active {
+        box-shadow: var(--shadow-in);
+        transform: translateY(2px);
+        background-color: var(--col-gold-400) !important;
+        // border-color: var(--col-green-400) !important;
+        // color: var(--col-gold-400) !important;
+    }
+}
+
+.btn-nav {
+    display: block;
+    width: 100%;
+    background-color: var(--col-green-400);
+    border: 2px solid var(--col-gold-400);
+    color: var(--col-gold-400);
+    text-transform: uppercase;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-900);
+    letter-spacing: 1px;
+    transition: all var(--transition);
+    box-shadow: 0 2px 3px 2px rgba(#000000, 0.2);
+    &:hover {
+        background-color: var(--col-gold-400);
+        color: var(--col-green-400) !important;
+        box-shadow: none;
+        transform: translateY(2px)
+    }
+}
+
+
+.btn-outline {
+    background-color: white;
+    border: 2px solid var(--col-green-400);
+    color: var(--col-green-400);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-600);
+    letter-spacing: 1px;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-in);
+
+    min-width: 190px;
+    
+    &:hover,
+    &:focus-visible,
+    &:active {
+        box-shadow: none;
+        transform: translateY(1px);
+        background-color: var(--col-green-400) !important;
+        // border-color: var(--col-green-400) !important;
+        font-weight: var(--fw-900);
+        color: white !important;
+    }
+
+}
+
+.btn--small {
+    font-size: var(--fs-200);
+    min-width: 130px;
+}
+
+.person__trigger {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.person__trigger::after {
+    font-family: FontAwesome;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    line-height: 1.5rem;
+    content: "\f068"; // minus
+}
+.person__trigger.collapsed::after {
+    content: "\f067"; // plus
+}
+
+
+.btn--has-arrow {
+    position: relative;
+    padding-right: 2rem;
+    &::after {
+        position: absolute;
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 600;
+        content: "\f105";
+        right: 1rem;
+        line-height: 1.4;
+        transition: transform var(--transition);
+    }
+    &:hover::after,
+    &:focus-visible::after,
+    &:active::after {
+        transform: translateX(0.5rem);
+    }
+}
+
+.btn-next {
+    width: 125px;
+    text-align: center;
+    text-transform: initial;
+    font-size: var(--fs-400);
+    &::after {
+        content: "\f105";
+        font-family: 'fontawesome';
+        margin-left: 0.5rem;
+    }
+}
+
+.btn-previous {
+    width: 125px;
+    text-align: center;
+    text-transform: initial;
+    font-size: var(--fs-400);
+    &::before {
+        content: "\f104";
+        font-family: 'fontawesome';
+        margin-right: 0.5rem;
+    }
+
+    &::after {
+        content: "";
+    }
+}
+
+.btn-previous, .btn-next {
+    a {
+        transition: all 0.3s ease-out;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+.btn-previous:hover, .btn-next:hover {
+    a {
+        color: var(--col-grey-400);
+    }
+}
