@@ -31,7 +31,7 @@
                 class="img <?=acf_slugify(get_sub_field('title'))?>">
                 <a href="<?=wp_get_attachment_image_url($i, 'full')?>"
                     data-fancybox="image">
-                    <img src="<?=wp_get_attachment_image_url($i, 'gallery')?>"
+                    <img src="<?=wp_get_attachment_image_url($i, 'medium')?>"
                         class="img-fluid" loading="lazy">
                 </a>
             </div>
