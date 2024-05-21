@@ -32,7 +32,7 @@
                 <a href="<?=wp_get_attachment_image_url($i, 'full')?>"
                     data-fancybox="image">
                     <img src="<?=wp_get_attachment_image_url($i, 'gallery')?>"
-                        class="img-fluid">
+                        class="img-fluid" loading="lazy">
                 </a>
             </div>
             <?php
