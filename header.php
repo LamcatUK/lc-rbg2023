@@ -78,8 +78,8 @@ defined('ABSPATH') || exit;
     <?php
         */
     }
-    if (get_field('ga_property', 'options')) {
-        ?>
+if (get_field('ga_property', 'options')) {
+    ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async
         src="https://www.googletagmanager.com/gtag/js?id=<?=get_field('ga_property', 'options')?>">
@@ -96,9 +96,9 @@ defined('ABSPATH') || exit;
         );
     </script>
     <?php
-    }
-    if (get_field('gtm_property', 'options')) {
-        ?>
+}
+if (get_field('gtm_property', 'options')) {
+    ?>
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -120,13 +120,13 @@ defined('ABSPATH') || exit;
     </script>
     <!-- End Google Tag Manager -->
     <?php
-    }
-    if (get_field('google_site_verification', 'options')) {
-        echo '<meta name="google-site-verification" content="' . get_field('google_site_verification', 'options') . '" />';
-    }
-    if (get_field('bing_site_verification', 'options')) {
-        echo '<meta name="msvalidate.01" content="' . get_field('bing_site_verification', 'options') . '" />';
-    }
+}
+if (get_field('google_site_verification', 'options')) {
+    echo '<meta name="google-site-verification" content="' . get_field('google_site_verification', 'options') . '" />';
+}
+if (get_field('bing_site_verification', 'options')) {
+    echo '<meta name="msvalidate.01" content="' . get_field('bing_site_verification', 'options') . '" />';
+}
 ?>
     <?php wp_head(); ?>
 </head>
@@ -150,8 +150,8 @@ do_action('wp_body_open');
                     <div class="w-100 d-flex flex-column-reverse flex-lg-column">
                         <div id="topNav" class="px-2 px-lg-0 collapse navbar-collapse navbars">
                             <ul id="top-nav"
-                                class="navbar-nav w-100 justify-content-end align-items-lg-center mt-2 mt-lg-0">
-                                <li class="nav-item">
+                                class="navbar-nav w-100 justify-content-end align-items-lg-center mt-2 mt-lg-0 gap-2">
+                                <li class="nav-item d-flex gap-2">
                                     <?=do_shortcode('[social_icons]')?>
                                 </li>
                                 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
