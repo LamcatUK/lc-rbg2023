@@ -1,8 +1,8 @@
 <?php
 $classes = $block['className'] ?? null;
 ?>
-<section class="hero <?=$classes?>"
-    style="background-image:url('<?=get_the_post_thumbnail_url(get_the_ID(), 'full')?>')">
+<section class="hero <?=$classes?>">
+    <?=get_the_post_thumbnail(get_the_ID(), 'full', array('class' => 'hero__bg'))?>
     <div class="front-hero__overlay"></div>
     <div class="container h-100">
         <div class="row h-100">

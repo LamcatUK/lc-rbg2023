@@ -23056,10 +23056,6 @@ footer .logo {
 .hero {
   margin-top: var(--h-top);
   height: 400px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #ccc;
   position: relative;
   isolation: isolate;
 }
@@ -23067,6 +23063,15 @@ footer .logo {
   .hero {
     margin-top: var(--h-top-desktop);
   }
+}
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100% !important;
+  z-index: -2;
 }
 .hero__inner {
   background-color: rgba(0, 0, 0, 0.5);

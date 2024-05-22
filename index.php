@@ -3,14 +3,13 @@
 defined('ABSPATH') || exit;
 
 $page_for_posts = get_option('page_for_posts');
-$bg = get_the_post_thumbnail_url($page_for_posts, 'full');
-
 
 get_header();
 ?>
 <main id="main">
     <!-- hero -->
-    <section class="hero" style="background-image:url('<?=$bg?>">
+    <section class="hero">
+        <?=get_the_post_thumbnail($page_for_posts, 'full', array('class' => 'hero__bg'))?>
         <div class="front-hero__overlay"></div>
         <div class="container h-100">
             <div class="row h-100">

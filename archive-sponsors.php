@@ -7,8 +7,8 @@ get_header();
 echo '<main>';
 // hero
 ?>
-<section class="hero"
-    style="background-image:url('<?=wp_get_attachment_image_url(get_field('sponsor_hero_image', 'options'), 'full')?>')">
+<section class="hero">
+    <?=wp_get_attachment_image(get_field('sponsor_hero_image', 'options'), 'full', false, array('class' => 'hero__bg'))?>
     <div class="front-hero__overlay"></div>
     <div class="container h-100">
         <div class="row h-100">

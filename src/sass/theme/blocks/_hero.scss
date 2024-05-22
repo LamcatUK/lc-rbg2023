@@ -115,10 +115,16 @@
         margin-top: var(--h-top-desktop);
     }
     height: 400px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-color: #ccc;
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100% !important;
+        z-index: -2;
+    }
+
     position: relative;
     isolation: isolate;
     &__inner {
