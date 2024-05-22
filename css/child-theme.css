@@ -22719,6 +22719,25 @@ footer .logo {
   color: white !important;
 }
 
+.btn-outline--gold {
+  background-color: transparent;
+  border: 2px solid var(--col-gold-400);
+  color: var(--col-gold-400);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-600);
+  letter-spacing: 1px;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-in);
+  min-width: 190px;
+}
+.btn-outline--gold:hover, .btn-outline--gold:focus-visible, .btn-outline--gold:active {
+  box-shadow: none;
+  transform: translateY(1px);
+  background-color: var(--col-gold-400) !important;
+  font-weight: var(--fw-600);
+  color: black !important;
+}
+
 .btn--small {
   font-size: var(--fs-200);
   min-width: 130px;

@@ -177,6 +177,70 @@
             "first_day": 1
         },
         {
+            "key": "field_664e3cfde9b75",
+            "label": "Half Signup Link",
+            "name": "half_signup_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_664e3d1ae9b76",
+            "label": "10K Signup Link",
+            "name": "10k_signup_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_664e3d28e9b77",
+            "label": "5K Signup Link",
+            "name": "5k_signup_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_664e3d370add2",
+            "label": "JJJ Signup Link",
+            "name": "jjj_signup_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
             "key": "field_653bdc550ea0d",
             "label": "Badges",
             "name": "",
@@ -789,5 +853,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699203219
+    "modified": 1716403521
 }

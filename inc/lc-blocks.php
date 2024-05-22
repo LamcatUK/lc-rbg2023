@@ -191,6 +191,24 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_two_col_text',
+            'title'				=> __('LC Two Col Text'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_two_col_text.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_sign_up',
+            'title'				=> __('LC Sign Up Buttons'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_sign_up.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
 
     }
 }
