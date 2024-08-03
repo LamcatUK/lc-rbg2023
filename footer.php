@@ -59,7 +59,23 @@ defined('ABSPATH') || exit;
             </g>
         </g>
     </svg></a>
-<?php wp_footer();
+<?php
+wp_footer();
+?>
+<style>
+.racecheck-widget-iframe {
+left: 0px !important;
+}
+</style>
+<script>
+	(function(w, d, s, o, f, js, fjs) {
+	w['RacecheckWidget']=o;w[o] = w[o] || function (){(w[o].q = w[o].q || []).push(arguments)};
+	js = d.createElement(s); fjs = d.getElementsByTagName(s)[0];
+	js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+	}(window, document, 'script', 'rcw', 'https://racecheck.com/static/js/widget.js'));
+	rcw('init', {widget: 7895});
+</script>
+<?php
 if (get_field('gtm_property', 'options')) {
     if (!is_user_logged_in()) {
         ?>
