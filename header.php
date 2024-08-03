@@ -79,7 +79,8 @@ defined('ABSPATH') || exit;
         */
     }
 if (get_field('ga_property', 'options')) {
-    ?>
+    if (!is_user_logged_in()) {
+        ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async
         src="https://www.googletagmanager.com/gtag/js?id=<?=get_field('ga_property', 'options')?>">
@@ -95,10 +96,12 @@ if (get_field('ga_property', 'options')) {
             '<?=get_field('ga_property', 'options')?>'
         );
     </script>
-    <?php
+        <?php
+    }
 }
 if (get_field('gtm_property', 'options')) {
-    ?>
+    if (!is_user_logged_in()) {
+        ?>
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -119,7 +122,8 @@ if (get_field('gtm_property', 'options')) {
         );
     </script>
     <!-- End Google Tag Manager -->
-    <?php
+        <?php
+    }
 }
 if (get_field('google_site_verification', 'options')) {
     echo '<meta name="google-site-verification" content="' . get_field('google_site_verification', 'options') . '" />';
