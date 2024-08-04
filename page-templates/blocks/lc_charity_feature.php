@@ -52,7 +52,7 @@
                     </h2>
                     <div class="row mb-4">
                         <div class="col-md-6"><img
-                                src="<?=wp_get_attachment_image_url(get_field('charity_logo', $chid), 'full')?>">
+                                src="<?=wp_get_attachment_image_url(get_field('charity_logo', $chid), 'full')?>" alt="">
                         </div>
                         <div class="col-md-6 d-flex align-items-center">
                             <?=get_field('intro')?>
