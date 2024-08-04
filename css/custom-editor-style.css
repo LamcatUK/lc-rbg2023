@@ -32,6 +32,7 @@
   --fw-600: 600;
   --fw-900: 800;
   --ff-body: "Figtree", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --ff-fa: "Font Awesome 6 Free";
   --shadow-out-f: drop-shadow( 0px 10px 15px rgba(0, 0, 0, 0.2)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
   --shadow-out: rgba(0, 0, 0, 0.15) 0px 14px 28px, rgba(0, 0, 0, 0.12) 0px 10px 10px;
   --shadow-in: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;

@@ -32,6 +32,7 @@
   --fw-600: 600;
   --fw-900: 800;
   --ff-body: "Figtree", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --ff-fa: "Font Awesome 6 Free";
   --shadow-out-f: drop-shadow( 0px 10px 15px rgba(0, 0, 0, 0.2)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
   --shadow-out: rgba(0, 0, 0, 0.15) 0px 14px 28px, rgba(0, 0, 0, 0.12) 0px 10px 10px;
   --shadow-in: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -23571,6 +23572,59 @@ footer .logo {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
+}
+
+.pdf_preview__container {
+  width: min(800px, 90vw);
+  margin-inline: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: "title" "map" "button";
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #004445 0, #6fb98f 100%);
+  border-radius: var(--border-lg);
+  box-shadow: var(--shadow-in);
+}
+@media (min-width: 768px) {
+  .pdf_preview__container {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "title map" "button map";
+  }
+}
+.pdf_preview .btn, .pdf_preview .wpcf7 input[type=submit], .wpcf7 .pdf_preview input[type=submit] {
+  grid-area: button;
+  align-self: end;
+  justify-self: center;
+}
+.pdf_preview__title {
+  grid-area: title;
+  color: var(--col-gold-400);
+  font-size: var(--fs-700);
+  font-weight: var(--fw-600);
+  text-align: center;
+  position: relative;
+}
+.pdf_preview__title::after {
+  content: "\f107";
+  display: block;
+  font-family: var(--ff-fa);
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .pdf_preview__title::after {
+    content: "\f105";
+    display: inline;
+  }
+}
+.pdf_preview__dl {
+  grid-area: map;
+}
+.pdf_preview__image {
+  max-height: 150px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  display: block;
+  margin-inline: auto;
 }
 
 body {

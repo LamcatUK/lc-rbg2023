@@ -1,0 +1,50 @@
+.pdf_preview {
+    &__container {
+        width: min(800px,90vw);
+        margin-inline: auto;
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: "title" "map" "button";
+        @media (min-width:768px) {
+            grid-template-columns: 3fr 1fr;
+            grid-template-areas: "title map" "button map";
+        }
+        padding: 1rem 2rem;
+        background: linear-gradient(45deg,#004445 0,#6fb98f 100%);
+        border-radius: var(--border-lg);
+        box-shadow: var(--shadow-in);
+    }
+    .btn {
+        grid-area: button;
+        align-self: end;
+        justify-self: center;
+    }
+    &__title {
+        grid-area: title;
+        color: var(--col-gold-400);
+        font-size: var(--fs-700);
+        font-weight: var(--fw-600);
+        text-align: center;
+        position: relative;
+        &::after {
+            content: "\f107";
+            display: block;
+            @media (min-width:768px) {
+                content: "\f105";
+                display: inline;
+            }
+            font-family: var(--ff-fa);
+            font-weight: 600;
+        }
+    }
+    &__dl {
+        grid-area: map;
+    }
+    &__image {
+        max-height: 150px;
+        object-fit: contain;
+        display: block;
+        margin-inline: auto;
+    }
+
+}
