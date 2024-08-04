@@ -21,17 +21,31 @@
     }
     &__title {
         grid-area: title;
-        color: var(--col-gold-400);
+        color: var(--col-gold-400) !important;
         font-size: var(--fs-700);
         font-weight: var(--fw-600);
         text-align: center;
         position: relative;
+        justify-self: center;
+        &:hover,
+        &:focus-visible,
+        &:active {
+            &::after {
+                transform: translateY(1rem);
+                @media (min-width:768px) {
+                    transform: translateX(1rem);
+                }
+            }
+        }
         &::after {
             content: "\f107";
             display: block;
+            transition: transform var(--transition);
             @media (min-width:768px) {
                 content: "\f105";
                 display: inline;
+                position: absolute;
+                padding-left: 0.25rem;
             }
             font-family: var(--ff-fa);
             font-weight: 600;
@@ -39,12 +53,23 @@
     }
     &__dl {
         grid-area: map;
+        &:hover,
+        &:focus-visible,
+        &:active {
+            .pdf_preview__image {
+                box-shadow: var(--shadow-in);
+                transform: translateY(2px);
+            }
+        }
     }
     &__image {
         max-height: 150px;
         object-fit: contain;
         display: block;
+        width: auto;
         margin-inline: auto;
+        box-shadow: var(--shadow-out);
+        transition: all var(--transition);
     }
 
 }
