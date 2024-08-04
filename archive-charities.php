@@ -68,8 +68,8 @@ while ($f->have_posts()) {
         <h2 class="text-white underline">Make a Difference</h2>
         <p>Support Run Barns Green and help us to raise funds for over 17 local clubs and societies and for our chosen
             charity St. Catherine's Hospice, Crawley. Make a positive impact on your local community.</p>
-        <p><a href="/contact-us/">Get in touch</a> with our committee if you want to help make a difference and become a
-            sponsor in <?=date('Y')?>.
+        <p><a href="/about-us/">Get in touch</a> with our committee if you want to help make a difference and become a
+            sponsor.
     </div>
 </section>
 <section class="pt-5">

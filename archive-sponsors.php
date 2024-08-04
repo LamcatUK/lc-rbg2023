@@ -67,7 +67,7 @@ while ($f->have_posts()) {
     <div class="container py-4 text-white">
         <h2 class="text-white underline">Become a Sponsor</h2>
         <p>If your company would like to sponsor the Run Barns Green races (Half Marathon, 10K, 5K and Junior events),
-            please <a href="/contact-us/">get in touch</a> with our committee.
+            please <a href="/about-us/">get in touch</a> with our committee.
     </div>
 </section>
 <section class="pt-5">
