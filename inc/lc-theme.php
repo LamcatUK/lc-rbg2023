@@ -230,7 +230,7 @@ function LC_theme_enqueue()
 add_action('wp_enqueue_scripts', 'LC_theme_enqueue');
 
 
-add_filter('wpseo_sitemap_index', 'add_custom_urls');
+add_filter('wpseo_sitemap_page_content', 'add_custom_urls');
 
 function add_custom_urls() {
     $custom_urls = '
