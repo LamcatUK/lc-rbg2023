@@ -31,5 +31,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
       lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
   });
-  
+    
 });

@@ -23605,14 +23605,8 @@ footer .logo {
 }
 .inlinks.sticky {
   position: sticky;
-  top: var(--h-top);
   background-color: #fff;
-  z-index: 9999;
-}
-@media (min-width: 992px) {
-  .inlinks.sticky {
-    top: var(--h-top-desktop);
-  }
+  z-index: 999;
 }
 .inlinks__select {
   display: grid;

@@ -1,12 +1,12 @@
 .inlinks {
     &.sticky {
             position: sticky;
-            top: var(--h-top);
-            @media (min-width: 992px) {
-                top: var(--h-top-desktop);
-            }
+            // top: var(--h-top);
+            // @media (min-width: 992px) {
+            //     top: var(--h-top-desktop);
+            // }
             background-color: #fff;
-            z-index: 9999;
+            z-index: 999;
     }
     &__select {
         display: grid;
