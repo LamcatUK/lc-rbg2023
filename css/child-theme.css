@@ -22939,8 +22939,12 @@ footer .logo {
 
 .news__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+}
+@media (min-width: 992px) {
+  .news__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .news__card {
   display: grid;
