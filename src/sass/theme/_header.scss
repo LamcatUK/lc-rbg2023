@@ -1,9 +1,11 @@
+
 #wrapper-navbar {
     background-color: var(--col-green-400);
     backdrop-filter: blur(2px);
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
     padding: 0.5rem 0;
     font-size: 1rem;
+    border-bottom: 5px solid var(--col-gold-400);
     @media all and (min-width:992px) {
         font-size: 0.9rem;
     }
@@ -12,7 +14,12 @@
         content: '' !important;
     }
 
-    border-bottom: 5px solid var(--col-gold-400);
+    transition: transform 0.3s;
+
+    &.hidden {
+        transform: translateY(-100%);
+    }
+
 }
 
 
@@ -71,7 +78,7 @@
             padding: 0.5rem;
         }
         @media all and (min-width:992px) {
-            text-align: center;
+            // text-align: center;
             a {
                 padding: 0.3rem 0.5rem;
             }
@@ -106,10 +113,80 @@
         }
     }
 
+    .dropdown-menu {
+        border-radius: 0;
+        border: none;
+        background-color: var(--col-green-400);
+        @media (min-width:992px) {
+            border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+            margin-top: 1rem;
+            box-shadow: var(--shadow-in);
+        }
+        a {
+            text-transform: initial;
+            padding: 0.5rem 1rem;
+            &:hover {
+                color: var(--col-green-400);
+                background-color: var(--col-gold-400);
+            }
+        }
+    }
+
+
+    
+}
+
+.collapse {
+    transition: height 0.35s ease;
+}
+
+.navbar-collapse {
+    transition: height 0.35s ease;
 }
 
 .navbar-toggler {
-    color: var(--col-gold-600);
+    color: var(--col-gold-400);
+    border: none;
+    outline: none;
+    position: relative;
+    padding: 0.25rem 0.75rem;
+
+    &::before {
+        content: '\f0c9';
+        font-family: var(--ff-fa);
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity var(--transition), transform var(--transition);
+    }
+
+    &.collapsed::before {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+
+    &:not(.collapsed)::before {
+        content: '\f00d';
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &:focus-visible {
+        outline: 1px solid var(--col-gold-400);
+    }
+}
+
+.collapse {
+    transition: none !important;
+}
+
+.navbar-collapse {
+    transition: none !important;
 }
 
 #top-nav .nav-item a {

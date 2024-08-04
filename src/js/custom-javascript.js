@@ -5,29 +5,31 @@ AOS.init({
   once: true,
 });
 
-jQuery(function($){
-    var btn = $('#to-top');
+document.addEventListener('DOMContentLoaded', function() {
 
-    $(window).scroll(function () {
-      if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-      } else {
-        btn.removeClass('show');
+  // HIDE NAV
+
+  const navbar = document.getElementById('wrapper-navbar');
+
+  let lastScrollPosition = 0;
+  const navbarHeight = 0; // Get the height of the navbar
+  const smallerScrollThreshold = 200; // Threshold for adding the .smaller class
+
+  window.addEventListener('scroll', function() {
+      const currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+      if (currentScroll > smallerScrollThreshold) {
+
+          if (currentScroll > lastScrollPosition) {
+              // Down scroll
+              navbar.classList.add('hidden');
+          } else {
+              // Up scroll
+              navbar.classList.remove('hidden');
+          }
       }
-    });
 
-    btn.on('click', function (e) {
-      e.preventDefault();
-      $('html, body').animate({ scrollTop: 0 }, '300');
-    });
-
-
-    $('.notifications-slider').slick({
-      vertical: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      speed: 300,
-      arrows: false
-    });
-
-},9999);
+      lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
+  });
+  
+});

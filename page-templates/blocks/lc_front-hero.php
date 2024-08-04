@@ -50,19 +50,35 @@ $news = get_posts(array( 'numberposts' => 4, 'fields' => 'ids' ));
         <div class="row">
             <div class="col-lg-10">
                 <div class="ticker-wrap d-flex gap-2">
-                    <div class="ticker-heading">Latest:</div>
-                    <div class="notifications-slider">
-                        <?php
-                        foreach ($news as $n) {
+                <div class="ticker-heading">Latest:</div>
+                    <div class="ticker swiper">
+                        <div class="swiper-wrapper">
+                            <?php
+                            foreach ($news as $n) {
+                                ?>
+                                <div class="swiper-slide">
+                            <a href="<?=get_the_permalink($n)?>"
+                                class="ticker__item"><?=get_the_title($n)?></a>
+                                </div>
+                            <?php
+                            }
                             ?>
-                        <a href="<?=get_the_permalink($n)?>"
-                            class="ticker__item"><?=get_the_title($n)?></a>
-                        <?php
-                        }
-    ?>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".ticker", {
+      direction: "vertical",
+      slidesPerView: 1,
+      autoplay: true,
+      infinite: true,
+      loop: true,
+    });
+  </script>

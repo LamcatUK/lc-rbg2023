@@ -101,6 +101,13 @@
     background-color: var(--col-gold-400);
     font-size: var(--fs-500);
 }
+.ticker {
+    height: 3em;
+    overflow: hidden;
+    @media (min-width:768px) {
+        height: 1.2em;
+    }
+}
 .ticker-heading {
   font-weight: 200;
   text-transform: uppercase;

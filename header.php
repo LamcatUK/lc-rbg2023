@@ -25,7 +25,7 @@ defined('ABSPATH') || exit;
         href="<?=get_stylesheet_directory_uri()?>/fonts/figtree-v5-latin-600.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-700.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/figtree-v5-latin-800.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <?php
     if (is_front_page()) {
@@ -141,15 +141,15 @@ if (get_field('bing_site_verification', 'options')) {
 do_action('wp_body_open');
 ?>
     <div class="site" id="page">
-        <div id="wrapper-navbar" class="fixed-top">
-            <nav id="main-nav" class="navbar navbar-expand-lg d-block px-0 pt-2 pt-lg-0"
+        <header id="wrapper-navbar" class="fixed-top">
+            <!-- <nav id="main-nav" class="navbar navbar-expand-lg d-block px-0 pt-2 pt-lg-0" -->
+            <nav id="main-nav" class="navbar navbar-expand-lg"
                 aria-labelledby="main-nav-label">
                 <div class="container-xl">
                     <div class="d-flex w-100 w-lg-auto justify-content-between align-items-center pe-4">
                         <a href="/" class="navbar-brand" rel="home"></a>
-                        <button class="navbar-toggler input-button" id="navToggle" data-bs-toggle="collapse"
-                            data-bs-target=".navbars" type="button" aria-label="Navigation"><i
-                                class="fa fa-navicon"></i></button>
+                        <button class="navbar-toggler input-button collapsed" id="navToggle" data-bs-toggle="collapse"
+                            data-bs-target=".navbars" type="button" aria-label="Navigation"></button>
                     </div>
                     <div class="w-100 d-flex flex-column-reverse flex-lg-column">
                         <div id="topNav" class="px-2 px-lg-0 collapse navbar-collapse navbars">
@@ -183,4 +183,4 @@ do_action('wp_body_open');
                 </div>
 
             </nav>
-        </div>
+        </header>

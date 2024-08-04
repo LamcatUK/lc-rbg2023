@@ -6750,29 +6750,27 @@
 	  // values from 0 to 3000, with step 50ms
 	  once: true
 	});
-	jQuery(function ($) {
-	  var btn = $('#to-top');
-	  $(window).scroll(function () {
-	    if ($(window).scrollTop() > 300) {
-	      btn.addClass('show');
-	    } else {
-	      btn.removeClass('show');
+	document.addEventListener('DOMContentLoaded', function () {
+	  // HIDE NAV
+
+	  const navbar = document.getElementById('wrapper-navbar');
+	  let lastScrollPosition = 0;
+	  const smallerScrollThreshold = 200; // Threshold for adding the .smaller class
+
+	  window.addEventListener('scroll', function () {
+	    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+	    if (currentScroll > smallerScrollThreshold) {
+	      if (currentScroll > lastScrollPosition) {
+	        // Down scroll
+	        navbar.classList.add('hidden');
+	      } else {
+	        // Up scroll
+	        navbar.classList.remove('hidden');
+	      }
 	    }
+	    lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
 	  });
-	  btn.on('click', function (e) {
-	    e.preventDefault();
-	    $('html, body').animate({
-	      scrollTop: 0
-	    }, '300');
-	  });
-	  $('.notifications-slider').slick({
-	    vertical: true,
-	    autoplay: true,
-	    autoplaySpeed: 3000,
-	    speed: 300,
-	    arrows: false
-	  });
-	}, 9999);
+	});
 
 	exports.Alert = alert;
 	exports.Button = button;
