@@ -230,6 +230,31 @@ function LC_theme_enqueue()
 add_action('wp_enqueue_scripts', 'LC_theme_enqueue');
 
 
+add_filter('wpseo_sitemap_index', 'add_custom_urls');
+
+function add_custom_urls() {
+    $custom_urls = '
+    <sitemap>
+        <loc>https://runbarnsgreen.org.uk/sponsors/</loc>
+        <lastmod>' . date('c') . '</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </sitemap>
+    <sitemap>
+        <loc>https://runbarnsgreen.org.uk/charities/</loc>
+        <lastmod>' . date('c') . '</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </sitemap>';
+
+    // Append the custom URLs to the existing sitemap.
+    return $custom_urls;
+}
+
+
+
+
+
 // black thumbnails - fix alpha channel
 /**
  * Patch to prevent black PDF backgrounds.
