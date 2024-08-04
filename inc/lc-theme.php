@@ -237,14 +237,10 @@ function add_custom_urls() {
     <sitemap>
         <loc>https://runbarnsgreen.org.uk/sponsors/</loc>
         <lastmod>' . date('c') . '</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
     </sitemap>
     <sitemap>
         <loc>https://runbarnsgreen.org.uk/charities/</loc>
         <lastmod>' . date('c') . '</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
     </sitemap>';
 
     // Append the custom URLs to the existing sitemap.
