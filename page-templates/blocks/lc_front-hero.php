@@ -1,5 +1,5 @@
-<div class="front-hero"
-    style="background-image:url('<?=wp_get_attachment_image_url(get_field('background'), 'full')?>')">
+<div class="front-hero">
+    <?=wp_get_attachment_image(get_field('background'), 'full', false, array('class' => 'hero__bg'))?>
     <div class="front-hero__overlay"></div>
     <div class="container h-100">
         <div class="row h-100">

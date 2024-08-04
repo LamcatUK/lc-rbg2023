@@ -16,6 +16,15 @@
     position: relative;
     isolation: isolate;
 
+    &__bg {
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100% !important;
+        z-index: -2;
+    }
+
     &__overlay {
         position: absolute;
         inset: 0;

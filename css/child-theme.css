@@ -23025,6 +23025,15 @@ footer .logo {
     height: 500px;
   }
 }
+.front-hero__bg {
+  position: absolute;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100% !important;
+  z-index: -2;
+}
 .front-hero__overlay {
   position: absolute;
   inset: 0;
