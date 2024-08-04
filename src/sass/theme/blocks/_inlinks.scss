@@ -1,6 +1,7 @@
 .inlinks {
     &.sticky {
             position: sticky;
+            top: 0;
             // top: var(--h-top);
             // @media (min-width: 992px) {
             //     top: var(--h-top-desktop);
