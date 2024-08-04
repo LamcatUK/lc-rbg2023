@@ -234,14 +234,18 @@ add_filter('wpseo_sitemap_index', 'add_custom_urls');
 
 function add_custom_urls() {
     $custom_urls = '
-    <sitemap>
+    <url>
         <loc>https://runbarnsgreen.org.uk/sponsors/</loc>
         <lastmod>' . date('c') . '</lastmod>
-    </sitemap>
-    <sitemap>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://runbarnsgreen.org.uk/charities/</loc>
         <lastmod>' . date('c') . '</lastmod>
-    </sitemap>';
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>';
 
     // Append the custom URLs to the existing sitemap.
     return $custom_urls;
