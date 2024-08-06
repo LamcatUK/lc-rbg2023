@@ -22936,6 +22936,12 @@ footer .logo {
 .blog .sidebar .blog_card__content {
   padding: 0.5rem 1rem;
 }
+.blog .race_nav {
+  background-color: transparent;
+}
+.blog .race_nav__overlay {
+  display: none;
+}
 
 .news__grid {
   display: grid;
@@ -23309,6 +23315,8 @@ footer .logo {
   aspect-ratio: 1;
   display: block;
   margin-inline: auto;
+  border-radius: 0;
+  box-shadow: none;
 }
 .race_nav__ages {
   padding-top: 0.5rem;

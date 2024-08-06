@@ -54,6 +54,14 @@
         }
     }
 
+
+    .race_nav {
+        background-color: transparent;
+        &__overlay {
+            display: none;
+        }
+    }
+
 }
 
 .news {
