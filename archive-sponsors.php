@@ -22,6 +22,7 @@ echo '<main>';
 </section>
 <?php
 // featured
+$fc = 0;
 $f = new WP_Query(array(
     'post_type' => 'sponsors',
     'post_status' => 'publish',
@@ -33,10 +34,12 @@ $f = new WP_Query(array(
       )
     )
 ));
-while ($f->have_posts()) {
-    $f->the_post();
-    $a = acf_slugify(get_the_title());
-    ?>
+if ($f->have_posts()) {
+    $fc = 1;
+    while ($f->have_posts()) {
+        $f->the_post();
+        $a = acf_slugify(get_the_title());
+        ?>
 <a id="<?=$a?>" class="anchor"></a>
 <section class="py-5" data-aos="fade">
     <div class="container-xl">
@@ -59,10 +62,10 @@ while ($f->have_posts()) {
         </div>
     </div>
 </section>
-<?php
-}
-// become a sponsor
-?>
+    <?php
+    }
+    // become a sponsor
+    ?>
 <section class="bg--grad" data-aos="fade">
     <div class="container py-4 text-white">
         <h2 class="text-white underline">Become a Sponsor</h2>
@@ -70,6 +73,9 @@ while ($f->have_posts()) {
             please <a href="/about-us/">get in touch</a> with our committee.
     </div>
 </section>
+    <?php
+}
+?>
 <section class="pt-5">
     <div class="container-xl">
         <h2 class="text-green-400 underline mb-5" data-aos="fade">Our Partners</h2>
@@ -130,6 +136,20 @@ while ($p->have_posts()) {
 ?>
     </div>
 </section>
+<?php
+if ($fc == 0) {
+        // become a sponsor
+    ?>
+<section class="bg--grad" data-aos="fade">
+    <div class="container py-4 text-white">
+        <h2 class="text-white underline">Become a Sponsor</h2>
+        <p>If your company would like to sponsor the Run Barns Green races (Half Marathon, 10K, 5K and Junior events),
+            please <a href="/about-us/">get in touch</a> with our committee.
+    </div>
+</section>
+    <?php
+}
+?>
 <section class="pt-5">
     <div class="container-xl">
         <h2 class="text-green-400 underline mb-5" data-aos="fade">Our Sponsors</h2>
