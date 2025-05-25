@@ -32,7 +32,7 @@
     $next = explode(':', $next);
     $date = mktime($next['0'], $next['1'], 0, $next['3'], $next['4'], $next['5']);
     ?>
-                    <div class="h4 text-center">Race Day is
+                    <div class="h2 text-center">Race Day is
                         <?=date('jS F, Y', $date)?>
                     </div>
                     <?=do_shortcode("[countdown id='cnt' year='{$next['5']}' month='{$next['3']}' day='{$next['4']}' hour='{$next['0']}' min='{$next['1']}' sec='00']")?>
