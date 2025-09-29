@@ -47,7 +47,7 @@
                     <?php
                     $chid = get_field('charity')[0];
                 ?>
-                    <h2 class="underline text-green-400 h3 mb-4">Our 2025 Charity -
+                    <h2 class="underline text-green-400 h3 mb-4">Our 2026 Charity -
                         <?=get_the_title($chid)?>
                     </h2>
                     <div class="row mb-4">
