@@ -7,7 +7,7 @@
                     <a href="https://jlphoto.smugmug.com/" target="_blank"><img src="<?= get_stylesheet_directory_uri() ?>/img/jl-photography.png" width="794" height="124" class="w-md-75"></a>
                 </div>
                 <div class=" col-md-6">
-                    <div class="mb-3 text-center"><a href="https://jeremy-landey-photography.photohawk.com/galleries/run-barns-green" target="_blank">View all photos</a> <span class="text-white">or enter your bib number below</span></div>
+                    <div class="mb-3 text-center"><a href="https://jeremy-landey-photography.photohawk.com/galleries/run-barns-green-2025" target="_blank">View all photos</a> <span class="text-white">or enter your bib number below</span></div>
 
                     <div class="row g-2">
                         <div class="col-md-8">
@@ -29,7 +29,7 @@
         var bibNumber = document.getElementById("bib").value;
 
         // Construct the URL with the input value
-        var url = "https://jeremy-landey-photography.photohawk.com/galleries/run-barns-green?text=" + bibNumber;
+        var url = "https://jeremy-landey-photography.photohawk.com/galleries/run-barns-green-2025?text=" + bibNumber;
 
         // Open the URL in a new tab
         window.open(url, '_blank');
