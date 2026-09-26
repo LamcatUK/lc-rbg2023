@@ -9,7 +9,7 @@ $link = get_field('link');
             <a href="<?=$pdf_url?>" target="_blank" class="pdf_preview__title"><?=get_field('title')?></a>
             <a class="btn btn-gold"
                 href="<?=$link['url']?>"
-                target="<?=$link['target']?>"><?=$link['title']?> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                target="<?=$link['target']?>"><?=$link['title']?></a>
             <a href="<?=$pdf_url?>" target="_blank" class="pdf_preview__dl"><?=wp_get_attachment_image($fileID, 'medium', false, array('class' => 'pdf_preview__image'))?></a>
         </div>
     </div>
