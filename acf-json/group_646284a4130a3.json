@@ -17,7 +17,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_6462931e58c6f",
@@ -59,7 +60,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_646284d0d25e3",
@@ -156,7 +158,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_646e54e9b9efe",
@@ -174,12 +177,13 @@
             },
             "display_format": "d\/m\/Y g:i a",
             "return_format": "g:i:0:m:d:Y",
-            "first_day": 1
+            "first_day": 1,
+            "default_to_current_date": 0
         },
         {
             "key": "field_664e3cfde9b75",
-            "label": "Half Signup Link",
-            "name": "half_signup_link",
+            "label": "Race Space Signup Link",
+            "name": "racespace_signup_link",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -190,39 +194,8 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
-        },
-        {
-            "key": "field_664e3d1ae9b76",
-            "label": "10K Signup Link",
-            "name": "10k_signup_link",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
-            "key": "field_664e3d28e9b77",
-            "label": "5K Signup Link",
-            "name": "5k_signup_link",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
+            "return_format": "url",
+            "allow_in_bindings": 1
         },
         {
             "key": "field_664e3d370add2",
@@ -255,7 +228,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_653bdc5f0ea0e",
@@ -350,7 +324,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_653bfff1d2579",
@@ -535,7 +510,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_653d0bac69929",
@@ -602,7 +578,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_65415e56a2a4c",
@@ -701,7 +678,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_6542ae713bd76",
@@ -784,6 +762,48 @@
             "mime_types": ""
         },
         {
+            "key": "field_68ebb61f301ef",
+            "label": "5K Men",
+            "name": "5k_men",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 1
+        },
+        {
+            "key": "field_68ebb62e301f0",
+            "label": "5K Ladies",
+            "name": "5k_ladies",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 1
+        },
+        {
             "key": "field_6547c1d40242e",
             "label": "SS Half Results",
             "name": "ss_half_results",
@@ -849,7 +869,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_66af850078804",
@@ -890,5 +911,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1722778895
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1790427189
 }
