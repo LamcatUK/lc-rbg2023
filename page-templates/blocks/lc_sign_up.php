@@ -65,7 +65,7 @@ $jjj = get_field( 'jjj_signup_link', 'option' ) ? get_field( 'jjj_signup_link', 
 					alt="" width="150px">
 			</div>
 			<div class="col-md-4 my-auto">
-				<p>Sign-up for the annual Kids’ Race will open closer to the event date. Keep an eye on our social media for more details.</p>
+				<p>Sign-up for the annual Kids’ Race will open closer to the event date. Keep an eye on our social media channels for more details.</p>
 			</div>
 		</div>
 			<?php
