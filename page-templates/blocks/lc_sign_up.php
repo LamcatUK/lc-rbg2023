@@ -55,6 +55,20 @@ $jjj = get_field( 'jjj_signup_link', 'option' ) ? get_field( 'jjj_signup_link', 
 			</div>
 		</div>
 			<?php
+		} else {
+			?>
+		<h2 class="pt-5 underline text-green-400 mb-4">Jennings Junior Jog</h2>
+		<div class="row g-4">
+			<div class="col-md-2 text-center">
+				<img
+					src="<?= esc_url( get_stylesheet_directory_uri() ); ?>/img/rbg_kids_jjj.svg"
+					alt="" width="150px">
+			</div>
+			<div class="col-md-4 my-auto">
+				<p>Sign-up for the annual Kids’ Race will open closer to the event date. Keep an eye on our social media for more details.</p>
+			</div>
+		</div>
+			<?php
 		}
 		?>
 	</div>
